@@ -1,0 +1,23 @@
+{
+  "name": "tourpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guneetnagia/TourPage.git"
+  },
+  "author": "Guneet Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guneetnagia/TourPage/issues"
+  },
+  "homepage": "https://github.com/guneetnagia/TourPage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
