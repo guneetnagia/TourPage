@@ -1,57 +1,13 @@
 *, *::after, *::before {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-  font-family: "Lato" sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
-  .header_logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px; }
-  .header_text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.header-primary {
-  text-transform: uppercase;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(50% 50%);
-  backface-visibility: hidden;
-  margin-bottom: 60px; }
-  .header-primary--main {
-    display: block;
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 35px;
-    animation-name: moveInLeft;
-    animation-duration: 3s; }
-  .header-primary--sub {
-    display: block;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 15.8px;
-    animation-duration: 3s;
-    animation-name: moveInRight; }
-
-.logo {
-  height: 35px; }
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
@@ -82,6 +38,39 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+body {
+  font-family: "Lato" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.header-primary {
+  text-transform: uppercase;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(50% 50%);
+  backface-visibility: hidden;
+  margin-bottom: 60px; }
+  .header-primary--main {
+    display: block;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 3s; }
+  .header-primary--sub {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 15.8px;
+    animation-duration: 3s;
+    animation-name: moveInRight; }
+
+.logo {
+  height: 35px; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -126,3 +115,20 @@ body {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
+  .header_logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header_text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
