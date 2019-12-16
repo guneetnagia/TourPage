@@ -16,6 +16,16 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
+  .header_logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header_text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .header-primary {
   text-transform: uppercase;
@@ -25,37 +35,23 @@ body {
   transform: translate(50% 50%);
   backface-visibility: hidden;
   margin-bottom: 60px; }
-
-.header-primary--main {
-  display: block;
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 35px;
-  animation-name: moveInLeft;
-  animation-duration: 3s; }
-
-.header-primary--sub {
-  display: block;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 15.8px;
-  animation-duration: 3s;
-  animation-name: moveInRight; }
-
-.header_logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
+  .header-primary--main {
+    display: block;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 3s; }
+  .header-primary--sub {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 15.8px;
+    animation-duration: 3s;
+    animation-name: moveInRight; }
 
 .logo {
   height: 35px; }
-
-.header_text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
 
 @keyframes moveInLeft {
   0% {
@@ -87,8 +83,7 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
