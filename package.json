@@ -1,8 +1,9 @@
 {
   "name": "tourpage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Style sheet",
   "main": "index.js",
+  "homepage": "https://guneetnagia.github.io/Traveller/",
   "scripts": {
     "compile-sass": "node-sass sass/main.scss css/style.css",
     "predeploy":"npm run compile-sass",
@@ -10,14 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guneetnagia/TourPage.git"
+    "url": "git+https://github.com/guneetnagia/Traveller.git"
   },
   "author": "Guneet Singh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/guneetnagia/TourPage/issues"
+    "url": "https://github.com/guneetnagia/Traveller/issues"
   },
-  "homepage": "https://github.com/guneetnagia/TourPage#readme",
   "dependencies": {},
   "devDependencies": {
     "gh-pages": "^2.1.1",
