@@ -8,7 +8,7 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
-
+    position: relative;
     // will not work on image as it already has transform property, so let's set transform speartely in all chil element manually.
    // & > * {
    //     transform: skewX(-12deg);
@@ -21,12 +21,38 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-3rem) skewX(12deg);;
+        transform: translateX(-3rem) skewX(12deg);
     }
     &__image {
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
     }
     &__text{
         transform: skewX(12deg);
+    }
+    &__caption {
+        position: absolute;
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: $color-white;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,20%);
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__image {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }
