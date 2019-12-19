@@ -366,6 +366,9 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.bg-video {
+  width: 100%; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
