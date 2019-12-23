@@ -505,6 +505,26 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  padding: 10rem 0;
+  background-color: #333;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
