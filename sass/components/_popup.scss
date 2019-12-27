@@ -7,6 +7,15 @@
     z-index: 9999;
     position: fixed;
 
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
     &__content {
         height: 50rem;
         width: 75%;
@@ -30,18 +39,46 @@
         vertical-align: middle;
         padding: 3rem 5rem;
     }
-
+    
     &__img {
         display: block;
         width: 100%;
     }
 
+    &__close {
+        &:link, &:visited {
+            color: $color-dark-grey;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
     &__text {
-        column-count: 2;
-        column-gap: 4rem;
+        
         font-size: 1.4rem;
         margin-bottom: 4rem;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-grey-light-2;
+
+        column-count: 2;
+        column-gap: 4rem;
         column-rule: 1px solid $color-grey-light-2;
+
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
         hyphens: auto;
     }
 }
