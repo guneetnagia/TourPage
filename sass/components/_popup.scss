@@ -1,0 +1,40 @@
+.popup {
+    background-color: rgba($color-black, $alpha: 0.8);
+    height: 100vh;    
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+
+    &__content {
+        height: 50rem;
+        width: 75%;
+        background-color: $color-white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        box-shadow: rgba($color-black,.2);
+        display: table;
+    }
+    &__left {
+        width: 33.33333%;
+        display: table-cell;
+    }
+
+    &__right {
+        width: 66.66667%;
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+
+    }
+}
