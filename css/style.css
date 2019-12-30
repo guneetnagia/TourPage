@@ -567,6 +567,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row:after {
     content: "";
     display: table;
@@ -577,7 +583,8 @@ body {
       margin-right: 6rem; }
       @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 6rem; } }
+          margin-right: 0;
+          margin-bottom: 6rem; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
