@@ -15,15 +15,13 @@ html {
         font-size: 50%;
     }
 
-   
-
-    @include respond(tab-land) {  //width < 900px
+    @include respond(tab-land) {  //width < 900px to 1200px
         // for tablet potrait, 1 rem = 9 px
         // 9px / 16px = 56.25%
         font-size: 56.25%;
     }
 
-    @include respond(tab-port) {  // width < 600px;
+    @include respond(tab-port) {  // width < 600px to 900px;
         // for tablet landscape screen, I would like 1rem = 8px
         // 8px / 16px = 50%
         font-size: 50%;
@@ -38,4 +36,8 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }

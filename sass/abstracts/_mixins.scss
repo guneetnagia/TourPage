@@ -38,3 +38,5 @@
         @media (min-width : 112.5em) {@content};   //1800px
     }
 }
+
+// order of changing media query : Base + typography > general layout + grid > page layout > components
